@@ -1,0 +1,11 @@
+useDynLib(tpr)
+
+export(tpr,
+       sig.test.int.ff,
+       sig.test.boots.ff,
+       cst.fit.ff,
+       gof.test.int.ff,
+       gof.test.boots.ff,
+       gof.test.boots.pf,
+       ci.plot)
+

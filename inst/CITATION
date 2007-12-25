@@ -1,0 +1,31 @@
+citHeader("To cite geepack in publications use:")
+
+
+citEntry(entry="Article",
+         title = "Temporal Process Regression",
+         author = personList(as.person("Jason P. Fine"),
+		             as.person("Jun Yan"),
+                             as.person("Michael R. Kosorok")),
+         year         = "2004",
+         journal      = "Biometrika",
+         volume       = "91",
+         pages        = "683--703",
+         textVersion = 
+         paste("Fine, J.~P., Yan, J., and Kosorok, M.~R.",
+               "Temporal Process Regression",
+	       "Biometrika, 91, pp683--703.")
+)
+
+citEntry(entry="Article",
+         title = "Estimating Equations for Association Structures",
+         author = personList(as.person("Jun Yan"), 
+                             as.person("Jason P. Fine")),
+         year         = "2004",
+         journal      = "Statistics in Medicine",
+         volume       = "23",
+         pages        = "859--880",
+         textVersion = 
+         paste("Yan, J. & Fine, J.P. (2004)", 
+               "Estimating Equations for Association Structures",
+               "Statistics in Medicine,  23, pp859--880.")
+)
