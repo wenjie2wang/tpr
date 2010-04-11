@@ -29,27 +29,21 @@ gof.test.boots.pf(fit1, fit2, nsim, p = NULL, q = 1)
   \item{plot}{ whether or not plot }
   \item{fit1}{ fit of H0 model (reduced) }
   \item{fit2}{ fit of H1 model (full) }
-  \item{p} { the index of the time-varying estimation in fit2 }
-  \item{q} { the index of the time-independent estimation in fit1 }
+  \item{p}{ the index of the time-varying estimation in fit2 }
+  \item{q}{ the index of the time-independent estimation in fit1 }
 }
-% \details{
-%   ~~ If necessary, more details than the description above ~~
-% }
 \value{
   Test statistics and their p-values.
 }
 \references{
   Fine, Yan, and Kosorok (2004). Temporal Process Regression. Biometrika.
 }
-\author{ Jun Yan \email{jyan@stat.uiowa.edu} }
+\author{ Jun Yan \email{jyan@stat.uconn.edu} }
 \seealso{
   \code{\link{tpr}}
 }
 \examples{
-
-
+## see ?tpr
 }
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
-\keyword{ htest }
-\keyword{ multivariate }% __ONLY ONE__ keyword per line
+\keyword{htest}
+\keyword{multivariate}

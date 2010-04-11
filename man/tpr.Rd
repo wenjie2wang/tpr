@@ -68,19 +68,9 @@ tpr(y, delta, x, xtv=list(), z, ztv=list(), w, tis,
   Fine, Yan, and Kosorok (2004). Temporal Process
   Regression. Biometrika.
 
-  Yan and Huang (2006). Partly Functional Temporal Process Regression
-  with Semiparametric Profile Estimating Functions. 
+  Yan and Huang (2009). Partly Functional Temporal Process Regression
+  with Semiparametric Profile Estimating Functions. Biometrics.
 }
-\author{ Jun Yan <jyan@stat.uiowa.edu> }
-% \note{ ~~further notes~~ 
-
-%  ~Make other sections like Warning with \section{Warning }{....} ~
-% }
-% \seealso{ ~~objects to See Also as \code{\link{help}}, ~~~ }
-\examples{
-
-}
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
+\author{ Jun Yan <jyan@stat.uconn.edu> }
 \keyword{ regression }
 \keyword{ robust }

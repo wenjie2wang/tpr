@@ -20,14 +20,9 @@ cst.fit.ff(fit, idx)
 \references{
   Fine, Yan, and Kosorok (2004). Temporal Process Regression. Biometrika.
 }
-\author{ Jun Yan \email{jyan@stat.uiowa.edu} }
+\author{ Jun Yan \email{jyan@stat.uconn.edu} }
 \seealso{
   \code{\link{tpr.test} }
 }
-\examples{
-
-}
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
 \keyword{ models }
 \keyword{ robust }

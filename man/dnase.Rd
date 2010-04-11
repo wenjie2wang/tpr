@@ -33,7 +33,7 @@
   http://www.mayo.edu/hsr/people/therneau/book/data/dnase.html
 }
 \references{
-  Yan and Fine (2007). Analysis of Episodic Data with Application to
+  Yan and Fine (2008). Analysis of Episodic Data with Application to
   Recurrent Pulmonary Exacerbations in Cystic Fibrosis Patients. JASA.
 }
 \examples{
@@ -103,7 +103,9 @@ xmat <- model.matrix(~ rx + fev, data=dat)
 tlim <- c(10, 168)
 good <- unlist(lapply(yrec, function(x) x$time[1] == 0))
 
+
 ## fully functional temporal process regression
+
 ## for recurrent event
 m.rec <- tpr(yrec, rt, xmat[,1:3], list(), xmat[,-(1:3),drop=FALSE], list(),
              tis=10:160, w = rep(1, 151), family = poisson(),
@@ -120,7 +122,6 @@ cfit <- cst.fit.ff(m.rec, idx=2:3)
 ## goodness-of-fit test for constant fit
 gof.test.int.ff(m.rec, idx=2:3, ncut=2)
 gof.test.boots.ff(m.rec, idx=2:3, nsim=1000)
-
 
 
 

@@ -19,6 +19,6 @@ ci.plot(x, y, se, level = 0.95, ylim = NULL, newplot = TRUE, fun = gaussian()$li
   \item{dfun}{ the derivative of the tranform function }
   \item{\dots}{ arguments to be passed to plot }
 }
-\author{Jun Yan \email{jyan@stat.uiowa.edu} }
+\author{Jun Yan \email{jyan@stat.uconn.edu} }
 \keyword{ hplot }
 \keyword{ aplot }
