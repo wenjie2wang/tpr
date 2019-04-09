@@ -1,11 +1,11 @@
-#include "tntsupp.h"
-
-extern "C"{
+// extern "C"{
 #include <R.h>
 #include <Rmath.h>
 #include <Rdefines.h>
 #include <R_ext/Applic.h>
-}
+// }
+
+#include "tntsupp.h"
 
 #include "famstr.h"
 #include "param.h"

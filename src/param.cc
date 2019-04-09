@@ -1,8 +1,8 @@
-using namespace std;
-
 #include "tntsupp.h"
 #include "geese.h"
 #include "param.h"
+
+using namespace std;
 
 //class Control
 Control::Control(int trace, int ajs, int j1s, int fij, 

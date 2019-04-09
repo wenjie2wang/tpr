@@ -1,4 +1,8 @@
-using namespace std;
+// extern "C" {
+#include <R.h>
+#include <Rmath.h>
+#include <Rdefines.h>
+// }
 
 #include "tntsupp.h"
 #include "geese.h"
@@ -8,14 +12,10 @@ using namespace std;
 #include "famstr.h"
 
 
-extern "C" {
-#include <R.h>
-#include <Rmath.h>
-#include <Rdefines.h>
-}
-
 // #define MAXIT 50
 // #define EPSILON 0.0001
+
+using namespace std;
 
 // global
 int MAXIT, SMOOTH, INTERCEPTSMOOTH;

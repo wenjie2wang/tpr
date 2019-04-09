@@ -1,4 +1,6 @@
-using namespace std;
+// extern "C" {
+#include <Rmath.h>
+// }
 
 #include "tntsupp.h"
 #include "geese.h"
@@ -6,9 +8,8 @@ using namespace std;
 #include "famstr.h"
 #include "float.h"
 
-extern "C" {
-#include <Rmath.h>
-}
+using namespace std;
+
 /*
 typedef double fun1(double);
 typedef double fun2(double, int);

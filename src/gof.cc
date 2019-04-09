@@ -1,4 +1,8 @@
-using namespace std;
+// extern "C" {
+#include <R.h>
+#include <Rmath.h>
+#include <Rdefines.h>
+// }
 
 #include "tntsupp.h"
 #include "geese.h"
@@ -7,12 +11,7 @@ using namespace std;
 #include "lgtdl.h"
 #include "famstr.h"
 
-
-extern "C" {
-#include <R.h>
-#include <Rmath.h>
-#include <Rdefines.h>
-}
+using namespace std;
 
 /***************************************************************\
  Boostrapping significance and goodness-of-fit test for constant

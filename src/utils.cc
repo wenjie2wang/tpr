@@ -1,9 +1,9 @@
-using namespace std;
-
 #include <math.h>
 
 #include "tntsupp.h"
 #include "geese.h"
+
+using namespace std;
 
 Fortran_Matrix<double> ident (int n) {
   Fortran_Matrix<double> ans(n,n);
