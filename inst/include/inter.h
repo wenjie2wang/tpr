@@ -1,10 +1,8 @@
 #ifndef INTER_H
 #define INTER_H
 
-extern "C" {
 #include <R.h>
 #include <Rdefines.h>
-}
 
 #include "tntsupp.h"
 #include "geese.h"

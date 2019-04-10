@@ -3,10 +3,10 @@
 
 #include "tntsupp.h"
 #include "geese.h"
-extern "C" {
 #include <R.h>
 #include <Rdefines.h>
 
+extern "C" {
 extern void R_approx(double *, double *, int *, double *, int *,
 		     int *, double *, double *, double *);
 

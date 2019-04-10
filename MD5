@@ -1,6 +1,6 @@
 b4c4fcf6055c76235fa58eb1ad1dd9cb *ChangeLog
-1193ba4077c2cfcd2fdd13c2454806a3 *DESCRIPTION
-bf9b8777ff8cbf8005f61b12653d7c33 *NAMESPACE
+26d7fd428784b05c57fcdf71d3120bb0 *DESCRIPTION
+dcb8bd7ff527d30c9272c2297714285e *NAMESPACE
 4c8c2c4b8a6db022aa1237dca24d05ab *R/ee.R
 17420483c5b1a79ee921acc7475a1a23 *R/eff.R
 ad1956a879927e5bd224f0de4a56ab51 *R/hypo.R
@@ -10,11 +10,11 @@ cace6a1c31b441fdbc14fe63d8a4987a *R/pfit.R
 7617f853eace98532092393fe42f6a0a *data/dnase.tab.xz
 b6c68ce43714113ab3b7b7be1da8317b *inst/CITATION
 402b0852f223299cd29ea85c656849e9 *inst/include/famstr.h
-39ae9bfd869a18d101b14c27dc845525 *inst/include/gee2.h
+ce101ac25f3eae21ac7c08d4bbcc18fd *inst/include/gee2.h
 7d1cfd53a00f4edb17e31b0ac3fadd26 *inst/include/geese.h
 3bee8ccaa73e91d509846d7626850ec0 *inst/include/geesubs.h
-efa1d2cf01ecdf4b65954993e565b9f2 *inst/include/inter.h
-f6d8ed45ec5d5e696aaaf5d5e94623e5 *inst/include/ordgee.h
+5724c395bc563f9e2c25dac0f7c778b7 *inst/include/inter.h
+726af32123d588e2da4d3eed3474f0ea *inst/include/ordgee.h
 a579ea72e62d3982786e82fbdc4b3536 *inst/include/param.h
 f21fe6de4a69d3a20e29a72a8e1ac639 *inst/include/tnt/cholesky.h
 66693b8465fe9f07be45da9f6f8c21e0 *inst/include/tnt/cmat.h
@@ -39,7 +39,7 @@ f7be8d905e6320d2b01f6119c10fbc8a *inst/include/tnt/trisolve.h
 b692f65accfbaec20a6c9ef1a6038e26 *inst/include/tnt/vec.h
 2f9d702f3e5a0fa587658b834e737767 *inst/include/tnt/vecadaptor.h
 ab5be7c78471fb94e662157f3aa1ddc2 *inst/include/tnt/version.h
-53e679a09c916c1eeba60897a83b3fcb *inst/include/tntsupp.h
+fa6fda333f95f8cf832616cf1919bab2 *inst/include/tntsupp.h
 597d248fa0d9ac0cffb1ee0e64a07c38 *inst/include/utils.h
 d0c5d1ac07bff1550462ce0939184ba2 *man/ci.plot.Rd
 a0276a040ea119e191fcdcf87ca5550e *man/dnase.Rd
@@ -55,6 +55,6 @@ edc766b5b0d2218fc90ba8f12e29930e *src/gof.cc
 ac304783b834b3560e9c180f126c5058 *src/inter.cc
 82d5549b304a7e1969f37f0c0782e2d4 *src/interp.cc
 f25a7316ada151599fd75630dc9da172 *src/lgtdl.cc
-4ea3fa22af3719b1d6edaf897c39a240 *src/lgtdl.h
+82d9786289e7be500af7258c64025eb5 *src/lgtdl.h
 f1d47006ab3e7e7642ea669cfa88b0f8 *src/param.cc
 1674a2b332583357c52db1cbddf981e6 *src/utils.cc

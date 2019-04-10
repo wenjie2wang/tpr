@@ -1,6 +1,9 @@
 #ifndef TNTSUPP_H
 #define TNTSUPP_H
 
+// undo define in Rinternals.h
+#undef length
+
 using namespace std;
 
 #include <iostream>

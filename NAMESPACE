@@ -1,5 +1,10 @@
 useDynLib(tpr)
 
+import(lgtdl)
+importFrom("graphics", "lines", "plot")
+importFrom("stats", "approx", "coef", "gaussian", "glm.fit", "pnorm",
+           "poisson", "qnorm", "quantile", "sd", "var")
+
 export(tpr,
        sig.test.int.ff,
        sig.test.boots.ff,
