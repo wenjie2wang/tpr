@@ -114,7 +114,7 @@ int QR_factor(MaTRiX &A, Vector& C, Vector &D)
 
         if (eta == 0)           // matrix is singular
         {
-            cerr << "QR: k=" << k << "\n";
+	  // cerr << "QR: k=" << k << "\n";
             return 1;
         }
 

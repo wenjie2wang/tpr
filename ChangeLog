@@ -1,3 +1,11 @@
+2021-06-20 Jun Yan <jun.yan@uconn.edu>
+
+	* Used symbol registration (long overdue).
+
+	* Removed unused variables in ee.cc.
+
+	* Changed maintainer email to jun.yan@uconn.edu.
+
 2007-10-20  Jun Yan  <jyan@stat.uconn.edu>
 
 	* Release 0.2-2 includes goodness-of-fit test for comparing
@@ -6,16 +14,15 @@
 
 2007-09-28  Jun Yan  <jyan@stat.uiowa.edu>
 
-	* Release 0.2-1 includes a test version of smoothing the 
+	* Release 0.2-1 includes a test version of smoothing the
 	time varying coefficient estimate with kernel methods.
-	
 
 2007-06-14  Jun Yan  <jyan@stat.uiowa.edu>
 
 	* Release 0.1-2 is for Arthur Allignol <arthur.allignol@gmail.com>
-	to test with his data; it is almost ready for public release. 
+	to test with his data; it is almost ready for public release.
 
-	* Nonparametric significance test, parametric constant fit, and 
+	* Nonparametric significance test, parametric constant fit, and
 	goodness-of-fit tests for constant fit are available. The tests
 	implemented are integral test and bootstrap test.
 

@@ -71,6 +71,6 @@ tpr(y, delta, x, xtv=list(), z, ztv=list(), w, tis,
   Yan and Huang (2009). Partly Functional Temporal Process Regression
   with Semiparametric Profile Estimating Functions. Biometrics.
 }
-\author{ Jun Yan <jyan@stat.uconn.edu> }
+\author{ Jun Yan <jun.yan@uconn.edu> }
 \keyword{ regression }
 \keyword{ robust }

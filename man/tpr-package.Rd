@@ -13,7 +13,7 @@ An overview of how to use the package, including the most important
 functions
 }
 \author{
-Jun Yan <jyan@stat.uconn.edu>
+Jun Yan <jun.yan@uconn.edu>
 }
 \references{
   Fine, Yan, and Kosorok (2004): Temporal Process Regression. Biometrika.

@@ -66,7 +66,7 @@ tpr <- function(y, delta, x, xtv=list(), z, ztv=list(), w, tis,
   control <- tpr.control(control)
   
   err <- rep(0, nt)
-  ans <- .Call("pfEst_rap", y, delta, xmat, xtv, zmat, ztv, w, tis, t(alpha), theta, err, evstr, kernstr, control) #, PACKAGE="tpr")
+  ans <- .Call("pfEst_rap", y, delta, xmat, xtv, zmat, ztv, w, tis, t(alpha), theta, err, evstr, kernstr, control, PACKAGE="tpr")
   names(ans) <- c("alpha", "theta", "valpha", "vtheta", "niter", "inflAlpha", "inflTheta", "delAlpha")
   ans$alpha <- t(ans$alpha)
   ans$valpha <- t(matrix(unlist(lapply(ans$valpha, diag)), nrow=p))

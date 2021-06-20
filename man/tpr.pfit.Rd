@@ -20,7 +20,7 @@ cst.fit.ff(fit, idx)
 \references{
   Fine, Yan, and Kosorok (2004). Temporal Process Regression. Biometrika.
 }
-\author{ Jun Yan \email{jyan@stat.uconn.edu} }
+\author{ Jun Yan \email{jun.yan@uconn.edu} }
 \seealso{
   \code{\link{tpr.test} }
 }

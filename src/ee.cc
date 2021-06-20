@@ -117,7 +117,6 @@ public:
   int poly () { return poly_; }
   double band () { return band_; }
   double kernfun ( double u ) { 
-    double ku;
     switch ( kern_ ) {
     case 1:  
       return EpanechnikovKernel ( u );
@@ -175,7 +174,7 @@ void prepTheta ( Vector<Lgtdl> &Y,
 		 //output
 		 DMatrix &H, DVector &G ) 
 {
-  int T = Tis.size(), N = Y.size(), p = X.num_cols(), q = Z.num_cols();
+  int T = Tis.size(), N = Y.size(); //, p = X.num_cols();
   double t, delta, eta, mu, mu_eta, v, w, y;
 
   H = 0.0; G = 0.0;
@@ -278,8 +277,8 @@ DVector updateAlpha ( Vector<Lgtdl> &Y,
 		      Vector<DVector> &Alpha, DVector &theta,
 		      EVStr &str, KernStr &kern ) 
 {
-  int T = Tis.size(), N = Y.size();
-  int p = X.num_cols(), q = Z.num_cols();
+  int T = Tis.size();
+  int p = X.num_cols();
   DMatrix Ht(p, p); DVector Gt(p);
   DVector Del(T);
 
@@ -304,7 +303,7 @@ void pfEst ( Vector<Lgtdl> &Y,
 	     Vector<DVector> &Alpha, DVector &theta,
 	     EVStr &str, KernStr &kern) 
 {
-  int p = X.num_cols(), q = Z.num_cols();
+  int q = Z.num_cols();
   double del_alpha = 0.0, del_theta = 0.0;
   for (int iter = 0; iter < MAXIT; iter++) {
     UsedIt(1) = iter;
@@ -366,7 +365,7 @@ void prepAlphaLP_j ( Vector<Lgtdl> &Y,
 		     DMatrix &H, DVector &G ) 
 {
   int N = Y.size(), T = Tis.size();
-  int p = X.num_cols();
+  //  int p = X.num_cols();
   double t, delta, eta, mu, mu_eta, v, w, y;
 
   H = 0.0; G = 0.0;
@@ -413,12 +412,11 @@ DVector updateAlphaLP ( Vector<Lgtdl> &Y,
 			DVector &theta,
 			EVStr &str, KernStr &kern ) 
 {
-  int T = Tis.size(), N = Y.size();
-  int p = X.num_cols(), q = Z.num_cols();
+  int T = Tis.size();
+  //  int p = X.num_cols(); q = Z.num_cols();
   int pAug = AlphaAug(1).size();
   DMatrix Ht(pAug, pAug); DVector Gt(pAug);
   DVector Del(T); 
-  int k;
 
   UsedIt(1) = 0;
   for ( int j = 1; j <= Tis.size(); j++ ) {
@@ -601,7 +599,7 @@ void prepInfl (Vector<Lgtdl> &Y,
 	       Vector<DMatrix> &ZbarT //p by q
 	       ) {
   int T = Tis.size();
-  int p = X.num_cols(), q = Z.num_cols();
+  int q = Z.num_cols();
 
   for (int i = 1; i <= T; i++) {
     DVector alpha_t = Alpha(i);
@@ -629,7 +627,7 @@ DMatrix getInflTheta (DVector &Tis, DVector &W,
 		      Vector<DVector> &g2v,
 		      Vector<DVector> &M,
 		      Vector<DMatrix> &ZbarT ) {
-  int T = ZbarT.size(), N = X.num_rows(), q = Z.num_cols(), p = X.num_cols();
+  int T = ZbarT.size(), N = X.num_rows(), q = Z.num_cols();
 
   DMatrix A(q, q), inflB(N, q); 
   A = 0.0; inflB = 0.0;

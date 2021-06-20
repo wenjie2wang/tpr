@@ -1,9 +1,15 @@
-#include <math.h>
+// using namespace std;
+
+#include <cmath>
+#include <R.h>
 
 #include "tntsupp.h"
 #include "geese.h"
 
-using namespace std;
+void VecPrint(const DVector &v) {
+  for (int i = 0; i < v.dim(); i++) Rprintf("%f ", v[i]);
+  Rprintf("\n");
+}
 
 Fortran_Matrix<double> ident (int n) {
   Fortran_Matrix<double> ans(n,n);
@@ -34,14 +40,14 @@ Fortran_Matrix<double> rho2mat(const Vector<double> &rho) {
 
 //solve(a, b = ident(n))
 DMatrix solve(const DMatrix &a, const DMatrix &b) {
-  Subscript m = a.dim(1); assert(m == a.dim(2));
-  Subscript n = b.dim(1); assert(m == n);
+  Subscript m = a.dim(1); // assert(m == a.dim(2));
+  Subscript n = b.dim(1); // assert(m == n);
   Subscript l = b.dim(2);
   Vector<Subscript> index(m);
   DMatrix T(a), B(b);
   DMatrix ans(n,l);
   if (LU_factor(T, index) != 0) {
-    cerr << "LU_factor() failed." << endl; 
+    // cerr << "LU_factor() failed." << endl; 
     return ans;
   }
   DVector v(m);
@@ -57,12 +63,12 @@ DVector solve(const DMatrix &A, const DVector &b) {
   DMatrix T(A); Vector<Subscript> index(b.size());
   DVector ans(b);
   if (LU_factor(T, index) !=0) {
-    cerr << "LU_factor() failed." << endl;
+    //cerr << "LU_factor() failed." << endl;
     return ans;
   }
 
   if (LU_solve(T, index, ans) != 0)  {
-    cerr << "LU_Solve() failed." << endl;
+    //cerr << "LU_Solve() failed." << endl;
     return ans;
   }
   return ans;
@@ -158,7 +164,7 @@ Vector<int> clussize(DVector &ID) {
 }
 
 DVector SMult(const DVector &v1, const DVector &v2) {
-  assert (v1.dim() == v2.dim());
+  // assert (v1.dim() == v2.dim());
   DVector ans = v1;
   for (int i = 1; i <= v1.dim(); i++)
     ans(i) = v1(i) * v2(i);
@@ -166,7 +172,7 @@ DVector SMult(const DVector &v1, const DVector &v2) {
 }
 
 DMatrix SMult(const DVector &v, const DMatrix &m) {
-  assert (v.dim() == m.dim(1));
+  // assert (v.dim() == m.dim(1));
   DMatrix tmp = m;
   for (int i = 1; i <= m.dim(1); i++)
     for (int j = 1; j <= m.dim(2); j++)

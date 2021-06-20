@@ -1,4 +1,4 @@
-useDynLib(tpr)
+useDynLib(tpr, .registration = TRUE, .fixes = "C_")
 
 import(lgtdl)
 importFrom("graphics", "lines", "plot")

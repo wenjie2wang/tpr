@@ -4,9 +4,9 @@
 // undo define in Rinternals.h
 #undef length
 
+#include <iostream>
 using namespace std;
 
-#include <iostream>
 #include "tnt/subscript.h"
 #include "tnt/tnt.h"
 #include "tnt/vec.h"
@@ -260,7 +260,7 @@ inline Fortran_Matrix<T> operator*(const Region2D<Fortran_Matrix<T> > &A,
     Subscript M = A.num_rows();
     Subscript N = A.num_cols();
 
-    Subscript MN = M*N; 
+    // Subscript MN = M*N; 
 
     Fortran_Matrix<T> res(M,N);
     const T* a = A.begin();
