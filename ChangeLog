@@ -1,3 +1,7 @@
+2022-10-04 Wenjie Wang <wang@wwenjie.org>
+
+	* Fixed the issues found by the rchk tool (thanks, Tomas Kalibera).
+
 2021-06-20 Jun Yan <jun.yan@uconn.edu>
 
 	* Used symbol registration (long overdue).

@@ -1,8 +1,7 @@
 Package: tpr
 Type: Package
 Title: Temporal Process Regression
-Version: 0.3-2
-Date: 2021-06-19
+Version: 0.3-3
 Author: Jun Yan <jun.yan@uconn.edu>
 Maintainer: Jun Yan <jun.yan@uconn.edu>
 Description: Regression models for temporal process responses with
